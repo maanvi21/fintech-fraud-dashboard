@@ -2,12 +2,7 @@
 
 ## Overview
 
-This project is a comprehensive Fintech Fraud Detection Dashboard designed to explore and implement various techniques for identifying fraudulent activities in financial transactions. 
-
-## Key Features
-- **Kafka Integration**: The dashboard leverages Apache Kafka for real-time data streaming and processing, enabling rapid detection of suspicious activities.
-- **RAG Knowledge Implementation**: The dashboard includes a sophisticated framework based on Red-Amber-Green (RAG) principles, to categorize fraud risk levels effectively.
-- **Model Testing**: Various fraud detection models are tested and evaluated, providing insights into their performance and accuracy in real-world scenarios.
+This project is a comprehensive Fintech Fraud Detection Dashboard designed to explore and implement various techniques for identifying fraudulent activities in financial transactions (insurance claims). 
 
 ## Technologies Used
 - Apache Kafka

@@ -21,46 +21,84 @@
 }
 
 @layer base {
+  html {
+    color-scheme: dark;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(0 0% 5%);
+    color: hsl(0 0% 98%);
     font-feature-settings: 'rlig' 1, 'calt' 1;
   }
 }
 
 @layer components {
   .card-glass {
-    @apply rounded-lg p-6 bg-white/5 backdrop-blur-sm border border-white/10;
+    border-radius: 8px;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .stat-card {
-    @apply card-glass relative overflow-hidden;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .badge-low-risk {
-    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-sm font-medium;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    background-color: rgba(16, 185, 129, 0.2);
+    color: rgb(167, 243, 208);
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .badge-medium-risk {
-    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-300 text-sm font-medium;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    background-color: rgba(234, 179, 8, 0.2);
+    color: rgb(253, 224, 71);
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .badge-high-risk {
-    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/20 text-red-300 text-sm font-medium;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    background-color: rgba(239, 68, 68, 0.2);
+    color: rgb(252, 165, 165);
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .score-low {
-    @apply text-emerald-400 font-bold;
+    color: rgb(74, 222, 128);
+    font-weight: bold;
   }
 
   .score-medium {
-    @apply text-yellow-400 font-bold;
+    color: rgb(234, 179, 8);
+    font-weight: bold;
   }
 
   .score-high {
-    @apply text-red-400 font-bold;
-  }
-
-  * {
-    @apply border-border;
+    color: rgb(248, 113, 113);
+    font-weight: bold;
   }
 }

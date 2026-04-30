@@ -10,9 +10,6 @@ This project is a comprehensive Fintech Fraud Detection Dashboard designed to ex
 - Machine Learning Libraries
 - Data Visualization Tools
 
-## Getting Started
-Follow the instructions below to set up your local development environment.
-
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request to help improve the project.
 

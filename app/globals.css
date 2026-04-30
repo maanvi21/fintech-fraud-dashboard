@@ -24,12 +24,9 @@
     --radius: 12px;
   }
 
-  html {
-    @apply bg-background;
-  }
-
   body {
-    @apply text-foreground bg-background;
+    @apply text-foreground;
+    background-color: hsl(var(--background));
     font-feature-settings: 'rlig' 1, 'calt' 1;
   }
 }

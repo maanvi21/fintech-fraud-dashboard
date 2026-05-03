@@ -1,0 +1,21 @@
+{
+  "roc_auc": 0.7567,
+  "pr_auc": 0.4595,
+  "best_threshold": 0.4392,
+  "precision_fraud": 0.6173,
+  "recall_fraud": 0.4032,
+  "total_features": 26,
+  "best_params": {
+    "subsample": 0.7,
+    "reg_lambda": 1.5,
+    "reg_alpha": 0.1,
+    "n_estimators": 300,
+    "min_child_weight": 5,
+    "max_depth": 7,
+    "learning_rate": 0.05,
+    "gamma": 0.1,
+    "colsample_bytree": 1.0
+  },
+  "total_records": 6755,
+  "flagged_fraud": 579
+}

@@ -1,0 +1,58 @@
+{
+  "best_strategy": "Stacking (LR meta-learner)",
+  "threshold": 0.9108,
+  "roc_auc": 0.9272,
+  "pr_auc": 0.75,
+  "fraud_precision": 0.6486,
+  "fraud_recall": 0.75,
+  "fraud_f1": 0.6957,
+  "improvement_vs_xgb": {
+    "precision": 0.1712,
+    "recall": -0.0781,
+    "f1": 0.0899
+  },
+  "all_strategies": [
+    {
+      "name": "Stacking (LR meta-learner)",
+      "threshold": 0.9108,
+      "f1": 0.6957,
+      "precision": 0.6486,
+      "recall": 0.75
+    },
+    {
+      "name": "XGBoost alone",
+      "threshold": 0.5157,
+      "f1": 0.6057,
+      "precision": 0.4775,
+      "recall": 0.8281
+    },
+    {
+      "name": "Weighted (XGB 80% + IF 20%)",
+      "threshold": 0.5416,
+      "f1": 0.5943,
+      "precision": 0.4685,
+      "recall": 0.8125
+    },
+    {
+      "name": "Weighted (XGB 70% + IF 30%)",
+      "threshold": 0.501,
+      "f1": 0.5714,
+      "precision": 0.4407,
+      "recall": 0.8125
+    },
+    {
+      "name": "Weighted (XGB 60% + IF 40%)",
+      "threshold": 0.4425,
+      "f1": 0.5417,
+      "precision": 0.4062,
+      "recall": 0.8125
+    },
+    {
+      "name": "OR rule (max of XGB, IF)",
+      "threshold": 0.7157,
+      "f1": 0.4971,
+      "precision": 0.3945,
+      "recall": 0.6719
+    }
+  ]
+}
